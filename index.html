@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Los 12 Mundos · Cajas temáticas para escuelas infantiles</title>
+  <meta name="description" content="Los 12 Mundos crea cajas temáticas listas para usar en guarderías y escuelas infantiles: estaciones, fiestas, valores y proyectos para todo el curso." />
+  <meta name="theme-color" content="#FDF8EE" />
+  <meta property="og:title" content="Los 12 Mundos · Cajas temáticas para escuelas infantiles" />
+  <meta property="og:description" content="Un mundo nuevo cada mes: cajas con todo el material para tu aula, listas para abrir y disfrutar." />
+  <meta property="og:image" content="assets/img/logo.png" />
+  <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+  <link rel="apple-touch-icon" href="assets/img/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="preload" as="image" href="assets/img/logo.webp" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="is-loading">
+  <!-- ============ LOADER ============ -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__orbit">
+      <img src="assets/img/logo-mark.webp" alt="" class="loader__logo" width="180" height="146" />
+      <span class="loader__rocket">🚀</span>
+    </div>
+    <div class="loader__bar"><span id="loaderBar"></span></div>
+    <p class="loader__text">Preparando tus mundos…</p>
+  </div>
+
+  <a class="skip-link" href="#catalogo">Saltar al catálogo</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#inicio" class="brand" aria-label="Los 12 Mundos, inicio">
+        <img src="assets/img/logo-mark.webp" alt="" width="64" height="52" />
+        <span class="brand__name"><span class="c-purple">Los</span> <span class="c-pink">1</span><span class="c-yellow">2</span> <span class="c-teal">Mundos</span></span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Principal">
+        <a href="#como-funciona">Cómo funciona</a>
+        <a href="#calendario">Calendario</a>
+        <a href="#catalogo">Catálogo</a>
+        <a href="#personalizado">Personalizado</a>
+        <a href="#faq">Preguntas</a>
+        <a href="#contacto" class="nav__cta-mobile">Contacto</a>
+      </nav>
+      <div class="header__actions">
+        <a href="#contacto" class="btn btn--ghost btn--sm hide-sm">Contacto</a>
+        <button class="cart-btn" id="cartBtn" aria-label="Abrir mi pedido">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M21 8h-3.2l-3.9-5.4a1 1 0 0 0-1.6 1.2L15.3 8H8.7l3-4.2a1 1 0 0 0-1.6-1.2L6.2 8H3a1 1 0 0 0-1 1.2l2 10A2 2 0 0 0 6 21h12a2 2 0 0 0 2-1.8l2-10A1 1 0 0 0 21 8Zm-3 11H6l-1.8-9h15.6L18 19Z"/></svg>
+          <span class="cart-btn__count" id="cartCount">0</span>
+        </button>
+        <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="inicio">
+      <div class="hero__deco" aria-hidden="true">
+        <span class="star s1">★</span><span class="star s2">★</span><span class="star s3">★</span><span class="star s4">★</span><span class="star s5">★</span>
+        <span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span>
+      </div>
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <span class="pill reveal"><span class="dot"></span> Para guarderías y escuelas infantiles</span>
+          <h1 class="hero__title reveal">
+            Un <span class="hl hl--pink">mundo</span> nuevo<br />
+            cada mes en <span class="hl hl--teal">tu aula</span>
+          </h1>
+          <p class="hero__lead reveal">
+            Cajas temáticas con <strong>todo el material listo para usar</strong>: láminas, manualidades, juegos y decoración
+            para celebrar las estaciones, las fiestas y los valores durante todo el curso.
+          </p>
+          <div class="hero__ctas reveal">
+            <a href="#catalogo" class="btn btn--primary btn--lg">Ver catálogo <span aria-hidden="true">→</span></a>
+            <a href="#personalizado" class="btn btn--ghost btn--lg">Crear caja personalizada</a>
+          </div>
+          <ul class="hero__stats reveal">
+            <li><strong data-count="26">26</strong><span>cajas temáticas</span></li>
+            <li><strong data-count="11">11</strong><span>meses de curso</span></li>
+            <li><strong>0</strong><span>horas preparando material</span></li>
+          </ul>
+        </div>
+        <div class="hero__visual reveal">
+          <div class="hero__planet"></div>
+          <img class="hero__logo" src="assets/img/logo.webp" alt="Logotipo de Los 12 Mundos" width="607" height="640" />
+          <div class="hero__float f1"><img src="assets/img/productos/otono.webp" alt="" loading="eager" /></div>
+          <div class="hero__float f2"><img src="assets/img/productos/espacio.webp" alt="" loading="eager" /></div>
+          <div class="hero__float f3"><img src="assets/img/productos/granja.webp" alt="" loading="eager" /></div>
+        </div>
+      </div>
+      <svg class="wave" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 40c180 40 360 50 540 30S900 0 1080 10s270 40 360 50v30H0z"/></svg>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track" id="marquee"></div>
+    </div>
+
+    <!-- ============ BENEFICIOS ============ -->
+    <section class="section benefits" id="beneficios">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="eyebrow">¿Por qué Los 12 Mundos?</span>
+          <h2>Pensado por y para <span class="hl hl--yellow">educadoras</span></h2>
+          <p>Sabemos lo que cuesta preparar cada fiesta y cada proyecto. Por eso lo dejamos todo listo para que tú solo tengas que abrir la caja.</p>
+        </header>
+        <div class="benefits__grid">
+          <article class="benefit reveal" style="--c: var(--purple)">
+            <div class="benefit__icon">⏱️</div>
+            <h3>Ahorra horas de preparación</h3>
+            <p>Olvídate de recortar, imprimir y buscar material. Cada caja llega con todo lo necesario para la actividad.</p>
+          </article>
+          <article class="benefit reveal" style="--c: var(--pink)">
+            <div class="benefit__icon">🧸</div>
+            <h3>Pensado para 0–3 años</h3>
+            <p>Actividades sensoriales, de manipulación y juego simbólico adaptadas al primer ciclo de Educación Infantil.</p>
+          </article>
+          <article class="benefit reveal" style="--c: var(--yellow)">
+            <div class="benefit__icon">📅</div>
+            <h3>Para todo el curso</h3>
+            <p>Del periodo de adaptación de septiembre a la fiesta de fin de curso: una caja para cada momento del año.</p>
+          </article>
+          <article class="benefit reveal" style="--c: var(--teal)">
+            <div class="benefit__icon">🎁</div>
+            <h3>A medida de tu escuela</h3>
+            <p>¿Tienes un proyecto propio o una fiesta local? Creamos tu caja personalizada con el número de niños que necesites.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CÓMO FUNCIONA ============ -->
+    <section class="section steps" id="como-funciona">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="eyebrow">Cómo funciona</span>
+          <h2>Tan fácil como <span class="hl hl--teal">1, 2, 3</span></h2>
+        </header>
+        <ol class="steps__list">
+          <li class="step reveal" style="--c: var(--purple)">
+            <span class="step__num">1</span>
+            <h3>Elige tus mundos</h3>
+            <p>Explora el catálogo por estación, fiesta o proyecto y añade las cajas que necesites a tu pedido.</p>
+          </li>
+          <li class="step reveal" style="--c: var(--pink)">
+            <span class="step__num">2</span>
+            <h3>Envíanos tu pedido</h3>
+            <p>Indícanos los datos de tu escuela y te confirmamos disponibilidad, plazos y envío sin compromiso.</p>
+          </li>
+          <li class="step reveal" style="--c: var(--yellow)">
+            <span class="step__num">3</span>
+            <h3>Abre y disfruta</h3>
+            <p>Recibe tu caja en la escuela, ábrela con los peques y… ¡a jugar, crear y aprender!</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ CALENDARIO ============ -->
+    <section class="section calendar" id="calendario">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="eyebrow">Calendario del curso</span>
+          <h2>¿Qué celebramos <span class="hl hl--pink">este mes</span>?</h2>
+          <p>Toca un mes y te mostramos las cajas que mejor encajan con ese momento del curso.</p>
+        </header>
+        <div class="months reveal" id="months" role="tablist" aria-label="Meses del curso"></div>
+        <div class="month-preview reveal" id="monthPreview" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- ============ CATÁLOGO ============ -->
+    <section class="section catalog" id="catalogo">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="eyebrow">Catálogo</span>
+          <h2>Nuestras <span class="hl hl--purple">cajas temáticas</span></h2>
+          <p>Cada caja incluye material para trabajar el tema en el aula. Toca una caja para ver todo lo que lleva.</p>
+        </header>
+
+        <div class="toolbar reveal">
+          <div class="chips" id="categoryChips" role="group" aria-label="Filtrar por categoría"></div>
+          <div class="toolbar__row">
+            <label class="search">
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M10 2a8 8 0 0 1 6.3 12.9l5.4 5.4-1.4 1.4-5.4-5.4A8 8 0 1 1 10 2Zm0 2a6 6 0 1 0 0 12 6 6 0 0 0 0-12Z"/></svg>
+              <input type="search" id="search" placeholder="Buscar: otoño, granja, Navidad…" aria-label="Buscar cajas" />
+            </label>
+            <label class="select">
+              <span class="sr-only">Mes</span>
+              <select id="monthSelect" aria-label="Filtrar por mes"></select>
+            </label>
+            <label class="select">
+              <span class="sr-only">Ordenar</span>
+              <select id="sortSelect" aria-label="Ordenar">
+                <option value="curso">Orden del curso</option>
+                <option value="price-asc">Precio: menor a mayor</option>
+                <option value="price-desc">Precio: mayor a menor</option>
+                <option value="name">Nombre A–Z</option>
+              </select>
+            </label>
+          </div>
+          <p class="toolbar__count" id="resultCount" aria-live="polite"></p>
+        </div>
+
+        <div class="grid" id="grid"></div>
+        <div class="empty" id="empty" hidden>
+          <div class="empty__emoji">🔭</div>
+          <p>No hemos encontrado ninguna caja con esos filtros.</p>
+          <button class="btn btn--ghost" id="resetFilters">Ver todas las cajas</button>
+        </div>
+        <p class="price-note">Precios por caja, IVA incluido. Gastos de envío no incluidos.<span id="bulkNote"></span></p>
+      </div>
+    </section>
+
+    <!-- ============ PERSONALIZADO ============ -->
+    <section class="section custom" id="personalizado">
+      <div class="container custom__grid">
+        <div class="custom__visual reveal">
+          <img src="assets/img/personalizado.webp" alt="Crea tu pedido personalizado" loading="lazy" width="900" height="750" />
+        </div>
+        <div class="custom__copy reveal">
+          <span class="eyebrow">Pedido personalizado</span>
+          <h2>¿Tienes una idea? <span class="hl hl--yellow">La creamos contigo</span></h2>
+          <p>Fiestas locales, proyectos de aula, aniversarios de la escuela, graduaciones… Cuéntanos qué necesitas y diseñamos una caja a medida para tu grupo.</p>
+          <ul class="checks">
+            <li>Adaptada al número de niños y a su edad</li>
+            <li>Temática libre o combinando varias cajas</li>
+            <li>Con el nombre o el logo de tu escuela</li>
+          </ul>
+          <form class="form card" id="customForm" novalidate>
+            <div class="form__row">
+              <label>Escuela infantil<input name="escuela" required placeholder="Nombre de la guardería" /></label>
+              <label>Persona de contacto<input name="nombre" required placeholder="Tu nombre" /></label>
+            </div>
+            <div class="form__row">
+              <label>Email<input type="email" name="email" required placeholder="tu@email.com" /></label>
+              <label>Nº de niños aprox.<input type="number" name="ninos" min="1" placeholder="Ej. 20" /></label>
+            </div>
+            <label>¿Qué te gustaría?<textarea name="idea" rows="3" required placeholder="Ej. Caja para la fiesta de graduación de 2–3 años, para junio…"></textarea></label>
+            <button class="btn btn--primary btn--block" type="submit">Enviar mi idea ✨</button>
+            <p class="form__hint">Te responderemos con una propuesta y presupuesto sin compromiso.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section faq" id="faq">
+      <div class="container container--narrow">
+        <header class="section__head reveal">
+          <span class="eyebrow">Preguntas frecuentes</span>
+          <h2>Resolvemos tus <span class="hl hl--teal">dudas</span></h2>
+        </header>
+        <div class="accordion">
+          <details class="reveal">
+            <summary>¿Para cuántos niños es cada caja?</summary>
+            <p>Las cajas están pensadas para trabajar el tema con un grupo-aula. Si tu grupo es grande o quieres material individual para cada niño, indícalo en el pedido y lo adaptamos.</p>
+          </details>
+          <details class="reveal">
+            <summary>¿Para qué edades están pensadas?</summary>
+            <p>Para el primer ciclo de Educación Infantil (0–3 años). Algunos materiales, como cuentas o piezas pequeñas, deben usarse siempre bajo la supervisión de un adulto.</p>
+          </details>
+          <details class="reveal">
+            <summary>¿Cómo hago un pedido?</summary>
+            <p>Añade las cajas que quieras a «Mi pedido», rellena los datos de tu escuela y envíanos la solicitud por email o WhatsApp. Te confirmaremos disponibilidad, plazo de entrega y forma de pago.</p>
+          </details>
+          <details class="reveal">
+            <summary>¿Hacéis descuentos para varias cajas o para el curso completo?</summary>
+            <p id="faqDiscount">Sí. Si pides varias cajas a la vez se aplica un descuento por volumen, y si quieres planificar el curso entero te preparamos un presupuesto especial.</p>
+          </details>
+          <details class="reveal">
+            <summary>¿Puedo cambiar el contenido de una caja?</summary>
+            <p>¡Claro! Con un pedido personalizado podemos quitar, añadir o combinar materiales de distintas cajas para que se ajusten a tu proyecto.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA / CONTACTO ============ -->
+    <section class="section contact" id="contacto">
+      <div class="container">
+        <div class="contact__card reveal">
+          <div class="contact__deco" aria-hidden="true"><span>★</span><span>★</span><span>★</span></div>
+          <h2>¿Hablamos?</h2>
+          <p>Escríbenos y te ayudamos a planificar los mundos de tu curso.</p>
+          <div class="contact__actions">
+            <a class="btn btn--light btn--lg" id="contactWhatsapp" href="#" target="_blank" rel="noopener">💬 WhatsApp</a>
+            <a class="btn btn--outline-light btn--lg" id="contactEmail" href="#">✉️ Email</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <img src="assets/img/logo.webp" alt="Los 12 Mundos" width="140" height="148" loading="lazy" class="footer__logo" />
+      </div>
+      <div>
+        <h4>Explora</h4>
+        <a href="#catalogo">Catálogo</a>
+        <a href="#calendario">Calendario del curso</a>
+        <a href="#personalizado">Pedido personalizado</a>
+        <a href="#faq">Preguntas frecuentes</a>
+      </div>
+      <div>
+        <h4>Categorías</h4>
+        <div id="footerCats"></div>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <a id="footerEmail" href="#"></a>
+        <a id="footerPhone" href="#" target="_blank" rel="noopener"></a>
+        <a id="footerInsta" href="#" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© <span id="year"></span> Los 12 Mundos · Cajas temáticas para escuelas infantiles</p>
+      <p>Hecho con <span class="c-pink">♥</span> para las educadoras</p>
+    </div>
+  </footer>
+
+  <!-- ============ MODAL PRODUCTO ============ -->
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__panel" role="document">
+      <button class="icon-btn modal__close" data-close aria-label="Cerrar">✕</button>
+      <div class="modal__body" id="modalBody"></div>
+    </div>
+  </div>
+
+  <!-- ============ DRAWER PEDIDO ============ -->
+  <div class="drawer" id="drawer" aria-hidden="true">
+    <div class="drawer__backdrop" data-close-drawer></div>
+    <aside class="drawer__panel" role="dialog" aria-modal="true" aria-labelledby="drawerTitle">
+      <header class="drawer__head">
+        <h3 id="drawerTitle">Mi pedido</h3>
+        <button class="icon-btn" data-close-drawer aria-label="Cerrar pedido">✕</button>
+      </header>
+      <div class="drawer__content">
+        <div id="cartItems"></div>
+        <div class="cart-empty" id="cartEmpty">
+          <div class="cart-empty__emoji">📦</div>
+          <p>Tu pedido está vacío.</p>
+          <a href="#catalogo" class="btn btn--primary" data-close-drawer>Explorar cajas</a>
+        </div>
+      </div>
+      <footer class="drawer__foot" id="cartFoot">
+        <div class="progress" id="shipProgress">
+          <p id="shipText"></p>
+          <div class="progress__bar"><span id="shipBar"></span></div>
+        </div>
+        <dl class="totals">
+          <div><dt>Subtotal</dt><dd id="subtotal">0,00 €</dd></div>
+          <div class="totals__discount" id="discountRow" hidden><dt id="discountLabel">Descuento</dt><dd id="discount">0,00 €</dd></div>
+          <div class="totals__total"><dt>Total</dt><dd id="total">0,00 €</dd></div>
+        </dl>
+        <form class="form" id="orderForm" novalidate>
+          <label>Escuela infantil<input name="escuela" required placeholder="Nombre de la guardería" /></label>
+          <div class="form__row">
+            <label>Contacto<input name="nombre" required placeholder="Tu nombre" /></label>
+            <label>Teléfono<input name="telefono" type="tel" placeholder="600 000 000" /></label>
+          </div>
+          <label>Email<input type="email" name="email" required placeholder="tu@email.com" /></label>
+          <label>Población<input name="poblacion" placeholder="Ciudad / provincia" /></label>
+          <div class="form__row form__row--buttons">
+            <button type="submit" class="btn btn--primary" data-channel="whatsapp">Enviar por WhatsApp</button>
+            <button type="submit" class="btn btn--ghost" data-channel="email">Enviar por email</button>
+          </div>
+          <p class="form__hint">Sin pago online: te confirmamos disponibilidad, envío y forma de pago.</p>
+        </form>
+      </footer>
+    </aside>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <button class="to-top" id="toTop" aria-label="Volver arriba">↑</button>
+
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
