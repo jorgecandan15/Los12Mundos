@@ -13,6 +13,7 @@
   <link rel="apple-touch-icon" href="assets/img/favicon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
   <link rel="preload" as="image" href="assets/img/logo.webp" />
   <link rel="stylesheet" href="css/styles.css" />
@@ -86,7 +87,11 @@
         </div>
         <div class="hero__visual reveal">
           <div class="hero__planet"></div>
-          <img class="hero__logo" src="assets/img/logo.webp" alt="Logotipo de Los 12 Mundos" width="607" height="640" />
+          <div class="hero__brand" title="¡Arrastra para girar el mundo!">
+            <img class="hero__logo" src="assets/img/logo.webp" alt="Logotipo de Los 12 Mundos" width="607" height="640" />
+            <canvas class="hero__globe" aria-hidden="true"></canvas>
+            <img class="hero__letters" src="assets/img/logo-letras.webp" alt="" width="607" height="640" aria-hidden="true" />
+          </div>
           <div class="hero__float f1"><img src="assets/img/productos/otono.webp" alt="" loading="eager" /></div>
           <div class="hero__float f2"><img src="assets/img/productos/espacio.webp" alt="" loading="eager" /></div>
           <div class="hero__float f3"><img src="assets/img/productos/granja.webp" alt="" loading="eager" /></div>
@@ -384,5 +389,6 @@
 
   <script src="js/products.js"></script>
   <script src="js/main.js"></script>
+  <script type="module" src="js/globe.js"></script>
 </body>
 </html>
