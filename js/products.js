@@ -21,10 +21,10 @@ window.L12M_CONFIG = {
 };
 
 window.L12M_CATEGORIES = [
-  { id: "estaciones", label: "Estaciones", emoji: "🍂", color: "#F5A524" },
-  { id: "fiestas", label: "Fiestas y tradiciones", emoji: "🎉", color: "#EF6F8C" },
-  { id: "valores", label: "Valores y días especiales", emoji: "💜", color: "#8E6CC2" },
-  { id: "proyectos", label: "Proyectos temáticos", emoji: "🚀", color: "#2BA79A" },
+  { id: "estaciones", short: "Estaciones", label: "Estaciones", emoji: "🍂", color: "#F5A524" },
+  { id: "fiestas", short: "Fiestas", label: "Fiestas y tradiciones", emoji: "🎉", color: "#EF6F8C" },
+  { id: "valores", short: "Valores", label: "Valores y días especiales", emoji: "💜", color: "#8E6CC2" },
+  { id: "proyectos", short: "Proyectos", label: "Proyectos temáticos", emoji: "🚀", color: "#2BA79A" },
 ];
 
 window.L12M_PRODUCTS = [

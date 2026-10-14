@@ -353,6 +353,7 @@ p { margin: 0 0 1em; }
 }
 .badge--novedad { background: var(--teal); }
 .card-p__body { padding: 16px 20px 20px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
+.lbl-short { display: none; }
 .card-p__cat { font-size: 0.78rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; color: var(--c); }
 .card-p__title { font-size: 1.3rem; margin: 0; }
 .card-p__desc { color: var(--ink-2); font-size: 0.95rem; margin: 0; flex: 1; }
@@ -590,7 +591,11 @@ p { margin: 0 0 1em; }
   .month-preview__list { grid-template-columns: repeat(2, 1fr); }
   .grid { grid-template-columns: 1fr 1fr; gap: 12px; }
   .card-p__body { padding: 12px 12px 14px; gap: 6px; }
-  .card-p__title { font-size: 1.05rem; }
+  .card-p__cat { font-size: 0.68rem; letter-spacing: 0.04em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .card-p__title { font-size: 1.05rem; line-height: 1.2; min-height: 2.4em; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+  .card-p__foot { margin-top: auto; }
+  .lbl-long { display: none; }
+  .lbl-short { display: inline; }
   .card-p__desc, .card-p__months, .card-p__quick { display: none; }
   .card-p__foot { flex-direction: column; align-items: stretch; gap: 8px; padding-top: 10px; }
   .price { font-size: 1.35rem; }

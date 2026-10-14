@@ -206,7 +206,7 @@
           <span class="card-p__quick">Ver qué incluye 👀</span>
         </button>
         <div class="card-p__body">
-          <span class="card-p__cat">${c.emoji} ${esc(c.label)}</span>
+          <span class="card-p__cat">${c.emoji} <span class="lbl-long">${esc(c.label)}</span><span class="lbl-short">${esc(c.short || c.label)}</span></span>
           <h3 class="card-p__title">${esc(p.name)}</h3>
           <p class="card-p__desc">${esc(p.short)}</p>
           <div class="card-p__months">${monthTags(p)}</div>
